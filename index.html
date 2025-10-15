@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maila's Hobbies</title>
+  <style>
+   
+   
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #7903af, #c607b9, #000000d9);         background-attachment: fixed;
+      color: black;
+      line-height: 1.6;
+    }
+
+    
+    nav {
+      background: rgba(0,0,0,0.8);
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(5px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: cyan;
+      letter-spacing: 1px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      transition: max-height 0.3s ease;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0%;
+      height: 2px;
+      background: cyan;
+      transition: width 0.3s ease;
+    }
+    nav ul li a:hover::after { width: 100%; }
+    nav ul li a:hover { color: cyan; }
+
+
+    
+    .welcome {
+      text-align: center;
+      padding: 90px 20px;
+      color: white;
+    }
+    
+
+
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #0a5378;
+      
+    }
+    
+
+    section p {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-8px); }
+    .card h3 {
+      margin-bottom: 10px;
+      color: rgb(44, 120, 120);
+    }
+
+   
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0b0b0b;
+      color: #bbb;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    .Ako{
+      color: aliceblue;
+    }
+     
+
+  </style>
+</head>
+<body>
+
+  
+  <nav>
+    <div class="logo">Home</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+    </ul>
+  </nav>
+  
+  
+  <div class="welcome">
+    <h1>Hey you there!, it's Maila Penaso here, just call me cute for short;> </h1>
+    <p>Well, i'll show you some of my hobbies here, stay tune yieeeee!</p>
+    
+  </div>
+
+
+  <section>
+    <h2>About this web</h2>
+    <p class="Ako">
+     This webpage is all about me, who I am, what I do, and the hobbies and interests that shape my personality. 
+     Here, you’ll learn about the things I’m passionate about, from my favorite pastimes to the activities that help me grow and express myself. I created this page to share a glimpse of my life, 
+     including my personal interests, creative hobbies, and the goals that keep me motivated. Through this, I hope to connect with others who share similar interests and to help you understand what makes me who I am.
+    </p>
+  </section>
+ 
+  <section>
+    <h2>What i Do</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Rubik's cube🧩</h3>
+        <p>I love rubik's cube because it helps me improve my thinking skills</p>
+      </div>
+      <div class="card">
+        <h3>Nature Photograph˚˖𓍢ִ໋`🌿:✧˚.📷⋆𖧧</h3>
+        <p>Photograpy is one of my hobbies, i love taking photos of our memories</p>
+      </div>
+      <div class="card">
+        <h3>Cooking⟡𓌉◯𓇋₊˚⊹♡</h3>
+        <p>it helps me unwind and reduce stress after a long day, it makes me laugh and cry sometimes</p>
+      </div>
+    </div>
+    </div>
+    
+  </section>
+
+  
+  <section>
+    <h2>My Journey</h2>
+    <p class="Ako">See a glimpse of my Journey doing my hobbies:></p>
+    <a href="about.html">View </a>
+  </section>
+ 
+
+  
+  <footer>
+   <p>© 2025 Maila's Hobbies | All Rights Reserved</p>
+  </footer>
+
+  
+  
+
+</body>
+</html>
